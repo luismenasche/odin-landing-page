@@ -7,7 +7,7 @@
     background-color: #1f2937;
     color: #e5e7eb;
     font-size: 18px;
-    padding: 16px 200px 120px 200px;
+    padding: 15px 200px 100px 200px;
 }
 
 .header__bar {
@@ -79,7 +79,7 @@
 }
 
 .section-1 {
-    padding: 60px 200px 100px 200px;    
+    padding: 100px 200px;
 }
 
 .section-1__title {
@@ -119,25 +119,35 @@
 .section-2 {
     background-color: #e5e7eb;
     color: #1f2937;
-    padding: 100px 200px 60px 200px;
+    padding: 100px 200px;
+}
+
+.section-2-container {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 93%;
 }
 
 .quote-text {
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
-    text-align: center;
+    width: 90%;
+    margin: 0;
 }
 
 .quote-author {
     font-size: 24px;
     font-weight: 900;
+    margin: 0;
+    padding-right: 40px;
     text-align: right;
 }
 
 .section-3 {
     color: #f9faf8;
-    padding: 60px 200px 60px 200px;
+    padding: 100px 200px;
 }
 
 .final-banner {
@@ -145,7 +155,7 @@
     background-color: #3882f6;
     border-radius: 10px;
     display: flex;
-    padding: 30px 60px;
+    padding: 60px 100px;
 }
 
 .final-banner__title, .final-banner__text {
@@ -154,7 +164,7 @@
 
 .final-banner__button {
     align-items: center;
-    border: 3px solid #f9faf8;
+    border: 2px solid #f9faf8;
     border-radius: 8px;
     color: #f9faf8;
     display: flex;
@@ -180,4 +190,18 @@
 
 .page-author {
     margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        padding: 15px 15px 100px 15px;
+    }
+
+    .section-1, .section-2, .section-3 {
+        padding: 100px 15px;
+    }
+    
+    .footer {
+        padding: 0 15px;
+    }
 }
